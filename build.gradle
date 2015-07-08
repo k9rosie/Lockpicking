@@ -8,6 +8,7 @@ ext {
 
 group = 'com.k9rosie'
 version = '0.1'
+author = 'k9rosie'
 
 repositories {
     mavenCentral()
@@ -31,6 +32,7 @@ processResources  {
 		.replace('${name}', project.name)
 		.replace('${version}', project.version)
 		.replace('${pluginMainClass}', "${project.group}.${project.name.toLowerCase()}.LockpickingPlugin")
+		.replace('${author}', project.author)
 	}
 }
 

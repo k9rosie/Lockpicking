@@ -13,6 +13,7 @@ public class LockpickingPlugin extends JavaPlugin {
 		lockpicking = new Lockpicking(this);
 		
 		lockpicking.init();
+		registerEvents();
 	}
 	
 	public void onDisable() {
