@@ -2,3 +2,8 @@ name: ${name}
 version: ${version}
 main: ${pluginMainClass}
 author: ${author}
+depend: [MassiveCore, Factions, LWC]
+permissions:
+  lockpicking.lockpick:
+    description: Allows players to lockpick.
+    default: op
