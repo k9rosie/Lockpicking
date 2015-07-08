@@ -17,6 +17,7 @@ repositories {
 }
 
 dependencies {
+	compile files('libs/MassiveCore.jar')
     compile files('libs/Factions.jar')
     compile files('libs/LWC.jar')
     compile "org.bukkit:bukkit:+"
