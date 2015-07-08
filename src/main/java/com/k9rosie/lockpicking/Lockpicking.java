@@ -53,7 +53,7 @@ public class Lockpicking {
 	
 	public void init() {
 		debug = config.getConfig().getBoolean("lockpicking.debug"); // set the debug boolean
-		
+		config.reloadConfig();
 		getLockpickData();
 	}
 	
