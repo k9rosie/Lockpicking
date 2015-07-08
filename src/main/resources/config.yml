@@ -1,0 +1,37 @@
+# The Lockpicking configuration file
+
+lockpicking:
+
+    # Debug messages
+    debug: false
+
+    # The time (in seconds) players must wait before each lockpicking attempt
+    warmupTime: 60
+
+    # The amount of damage a player takes when they fail to lockpick
+    failureDamage: 2
+
+    # Should a loud noise be played when a chest is lockpicked?
+    playNoise: true
+
+    # The list of lockpick items
+    # The name of an item should correspond with the correct Material string defined in the bukkit enum
+    # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+    lockpicks:
+
+        # The Material title for the specified lockpick item
+        wood_hoe:
+            # The chance (out of 100) that a lockpick will be successful
+            chance: 5
+
+        stone_hoe:
+            chance: 10
+
+        iron_hoe:
+            chance: 15
+
+        gold_hoe:
+            chance: 20
+
+        diamond_hoe:
+            chance: 25
