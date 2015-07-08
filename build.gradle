@@ -30,7 +30,7 @@ processResources  {
 		line
 		.replace('${name}', project.name)
 		.replace('${version}', project.version)
-		.replace('${pluginMainClass}', "${project.group}.${project.name.toLowerCase()}.Lockpicking")
+		.replace('${pluginMainClass}', "${project.group}.${project.name.toLowerCase()}.LockpickingPlugin")
 	}
 }
 
