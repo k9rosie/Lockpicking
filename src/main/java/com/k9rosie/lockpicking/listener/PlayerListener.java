@@ -2,7 +2,6 @@ package com.k9rosie.lockpicking.listener;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.BlockState;
 import org.bukkit.block.Chest;
 import org.bukkit.block.Dispenser;
 import org.bukkit.block.Dropper;
@@ -14,6 +13,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+import com.griefcraft.lwc.LWC;
 import com.griefcraft.model.Protection;
 import com.k9rosie.lockpicking.Lockpicking;
 import com.k9rosie.lockpicking.LockpickingPlugin;
@@ -46,7 +46,7 @@ public class PlayerListener implements Listener {
 				Block block = event.getClickedBlock();
 				Material material = block.getType();
 				
-				Protection protectionData = lockpicking.getLWCHook().findProtection(block.getLocation());
+				Protection protectionData = LWC.getInstance().findProtection(block.getLocation());
 				Player protectionOwner = protectionData.getBukkitOwner(); // owner of the chest
 				
 				MPlayer protectionMPlayer = MPlayer.get(protectionOwner);

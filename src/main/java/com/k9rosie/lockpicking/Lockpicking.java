@@ -24,31 +24,10 @@ public class Lockpicking {
 	
 	private boolean debug;
 	
-	private MassiveCore mcore;
-	private Factions factions;
-	private LWC lwc;
-	
 	public Lockpicking(LockpickingPlugin plugin) {
 		this.plugin = plugin;
 		config = new LockpickConfig(plugin);
 		lockpicks = new HashMap<Material, Lockpick>();
-		
-		// hook our dependencies
-		mcore = MassiveCore.get();
-		factions = Factions.get();
-		lwc = LWC.getInstance();
-	}
-	
-	public MassiveCore getMassiveCoreHook() {
-		return mcore;
-	}
-	
-	public Factions getFactionsHook() {
-		return factions;
-	}
-	
-	public LWC getLWCHook() {
-		return lwc;
 	}
 	
 	public void init() {
