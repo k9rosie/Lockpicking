@@ -1,7 +1,7 @@
-name: ${name}
-version: ${version}
-main: ${pluginMainClass}
-author: ${author}
+name: Lockpicking
+version: 0.1
+main: com.k9rosie.lockpicking.LockpickingPlugin
+author: k9rosie
 depend: [MassiveCore, Factions, LWC]
 permissions:
   lockpicking.lockpick:
