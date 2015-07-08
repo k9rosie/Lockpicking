@@ -2,7 +2,7 @@ name: Lockpicking
 version: 0.1
 main: com.k9rosie.lockpicking.LockpickingPlugin
 author: k9rosie
-depend: [Factions, LWC]
+#depend: [Factions, LWC]
 permissions:
   lockpicking.lockpick:
     description: Allows players to lockpick.
